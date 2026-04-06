@@ -10,6 +10,7 @@
 <h1>Registration Form</h1>
 
 <!-- This is a hidden note -->
+<form>
 <label for="firstName">First Name:*</label>
 <input type="text" id="firstName" name="firstName"
   value="Enter First Name"
@@ -23,6 +24,8 @@
   onfocus="if(this.value==='Enter Last Name') this.value='';"
   onblur="if(this.value==='') this.value='Enter Last Name';"
   pattern="[A-Za-z]+" title="Please enter letters only" required>
+
+  </form>
   
   <script src="js/validation.js"js></script>
 </body>
