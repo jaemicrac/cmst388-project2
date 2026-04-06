@@ -116,6 +116,16 @@
     size="7"
     placeholder="#######"
     title="Please enter a 7-digit phone number" required>
+
+  <!-- Section for Email Address -->
+  <label for="email">E-mail:*</label>
+  <input type="email" id="email" name="email"
+    pattern="^.{1,64}@[A-Za-z0-9]{1,252}\.[A-Za-z]{2,}$"
+    title="You have entered an invalid e-mail address" required>
+
+  <label for="confirmEmail">Confirm E-mail:*</label>
+  <input type="email" id=confirmEmail" name="confirmEmail"
+    title="Please re-enter your e-mail address" required>
     
   </form>
   
