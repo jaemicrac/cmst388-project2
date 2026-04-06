@@ -98,7 +98,17 @@
     pattern="[0-9]{5}"
     maxlength="5"
     title="Please enter a 5-digit numeric zip code" required>
-  
+
+   <!-- Section for Phone Number -->
+  <label for="phoneNumber">Phone Number:*</label>
+  <div class="phone-group">
+    <input type="text" id="phoneArea" name="phoneArea"
+      pattern="[0-9]{3}"
+      maxlength="3"
+      size="3"
+      placeholder="###"
+      title="Please enter a 3-digit area code" required>
+    <span> - </span>
   </form>
   
   <script src="js/validation.js"js></script>
