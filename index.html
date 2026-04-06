@@ -140,7 +140,25 @@
     <input type="radio" id="nonVegetarian" name="mealPreference" value="Non-Vegetarian">
     <label for="nonVegetarian">Non-Vegetarian</label>
   </fieldset>
-  
+
+  <!-- Section for Contact Method -->
+  <fieldset id="contactMethod">
+    <legend>Contact Method:* <span class="subtext">(select more than one)</span></legend>
+
+    <input type="checkbox" id="methodPhone" name="contactMethod" value="Phone">
+    <label for="methodPhone">Phone</label>
+
+    <input type="checkbox" id="methodEmail" name="contactMethod" value="E-mail">
+    <label for="methodEmail">E-mail</label><br>
+
+    <input type="checkbox" id="methodMail" name="contactMethod" value="Mail">
+    <label for="methodMail">Mail</label>
+
+    <input type="checkbox" id="methodLinkedIn" name="contactMethod" value="LinkedIn">
+    <label for="methodLinkedIn">LinkedIn</label>
+
+    <div id="contactError" style="color: red; display: none;">Please select at least two contact methods.</div>
+  </fieldset>
     
   </form>
   
