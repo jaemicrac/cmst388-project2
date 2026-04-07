@@ -22,3 +22,14 @@ label {
   margin-top: 15px;
   font-weight; bold;
 }
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #aaa;
+  box-sizing: border-box;
+}
