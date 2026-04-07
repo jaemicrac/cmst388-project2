@@ -9,7 +9,7 @@
 
 <h1>Registration Form</h1>
 
-<form>
+<form id="registrationForm" action="mailto:your-email@example.com" method="post" enctype="text/plain" onsubmit="return validateForm()">
   <!-- Name section of form -->
   <label for="firstName">First Name:*</label>
   <input type="text" id="firstName" name="firstName"
@@ -169,7 +169,6 @@
     placeholder="Enter any additional notes here (max 250 characters)..."></textarea>
 
   <!-- Section for Comment Section -->
-  <form id="registrationForm" action="mailto:your-email@example.com" method="post" enctype="text/plain" onsubmit="return validateForm()">
     <div class="button-group">
 
   <!-- Buttons -->
@@ -179,6 +178,6 @@
       
   </form>
   
-  <script src="js/validation.js"js></script>
+  <script src="js/validation.js"></script>
 </body>
 </html>
