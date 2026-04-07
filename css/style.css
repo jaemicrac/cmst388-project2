@@ -33,3 +33,36 @@ textarea {
   border: 1px solid #aaa;
   box-sizing: border-box;
 }
+
+.phone-group {
+  display: flex;
+  align-items: center;
+  gap: 10px
+}
+
+#phoneArea, #phoneNumber {
+  width: auto;
+}
+
+fieldset {
+  border: 1px solid #ddd;
+  margin-top: 20px;
+  padding: 15px;
+}
+
+legend {
+  font-weight: bold;
+  padding: 0 10px;
+}
+
+.subtext {
+  font-weight: normal;
+  font-style: italic;
+  font-size: 0.9em;
+}
+
+.button-group {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+}
