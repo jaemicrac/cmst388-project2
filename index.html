@@ -170,8 +170,10 @@
   <!-- Section for Comment Section -->
   <form id="registrationForm" action="mailto:your-email@example.com" method="post" enctype="text/plain" onsubmit="return validateForm()">
     <div class="button-group">
+
+  <!-- Buttons -->
       <button type"submit">Submit</button>
-      <button type="reset">Reset</button>
+      <button type="reset" id="resetBtn" onclick="return handleReset()">Reset</button>
     </div>
       
   </form>
