@@ -17,10 +17,11 @@ form {
   border-radius: 8px;
 }
 
-label {
+label, legend {
   display: block;
   margin-top: 15px;
-  font-weight; bold;
+  font-weight; bold; !important;
+  clear: both;
 }
 
 input[type="text"],
