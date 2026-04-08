@@ -41,7 +41,7 @@ textarea {
 .phone-group {
   display: inline-flex;
   align-items: center;
-  gap: 5px
+  gap: 5px;
   width: calc(100% - 170px);
 }
 
@@ -64,17 +64,18 @@ legend {
 
 input[type="radio"] + label,
 input[type="checkbox"] + label {
-  display: inline;
+  display: inline-block;
   width: auto;
   font-weight: normal;
   margin-left: 5px;
   margin-right: 15px;
+  vertical-align: middle;
 }
 
 input[type="radio"],
 input[type="checkbox"] {
   width: auto;
-  margin-top: 10px;
+  margin-top: 0;
   vertical-align: middle;
 }
 
