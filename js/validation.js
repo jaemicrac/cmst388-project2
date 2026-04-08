@@ -44,7 +44,7 @@ function handleReset() {
     const fields = ['firstName', 'lastName', 'address', 'city', 'zipCode', 'phoneArea', 'phoneNumber', 'email', 'confirmEmail', 'comments'];
 
     fields.forEach(id => {
-      document.getElementByID(id).value = "";
+      document.getElementById(id).value = "";
     });
 
     document.getElementById('state').selectedIndex = 0;
