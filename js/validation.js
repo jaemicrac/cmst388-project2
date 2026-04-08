@@ -26,7 +26,7 @@ function validateForm() {
     errorMessage += "- Please select at least two contact methods. \n";
   }
 
-  // Final 
+  // Final Decision
   if (errorMessage !== "") {
     alert("Please correct the following errors:\n\n + errorMessage);
     return false; 
@@ -34,4 +34,24 @@ function validateForm() {
     alert("Form submitted successfully!");
     return true; 
   }
+}
+
+// Reset Event Handler 
+function handleReset() {
+  const confirmReset = confirm("Are you sure you want to clear the entire form?");
+
+  if (confirmReset) {
+    const fields = ['firstName', 'lastName', 'address', 'city', 'zipCode', 'phoneArea', 'phoneNumber', 'email', 'confirmEmail', 'comments'];
+
+    fields.forEach(id => {
+      document.getElementByID(id).value = "";
+    });
+
+    document.getElementById('state').selectedIndex = 0;
+
+    document.getElementById('contactError').style.display = "none";
+
+    return true;
+  }
+  return false:
 }
