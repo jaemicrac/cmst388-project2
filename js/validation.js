@@ -28,7 +28,7 @@ function validateForm() {
 
   // Final Decision
   if (errorMessage !== "") {
-    alert("Please correct the following errors:\n\n + errorMessage);
+    alert("Please correct the following errors:\n\n" + errorMessage);
     return false; 
   } else {
     alert("Form submitted successfully!");
@@ -53,5 +53,5 @@ function handleReset() {
 
     return true;
   }
-  return false:
+  return false;
 }
