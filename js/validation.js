@@ -2,7 +2,7 @@
 function validateForm() {
   let errorMessage = ""; 
 
-  // Name Validation
+  // First and Last Name Validation
   const firstName = document.getElementById('firstName').value;
   const lastName = document.getElementById('lastName').value;
   const alphaRegex = /^[A-Za-z]+$/; // Regex for Alpha-only characters
@@ -26,7 +26,7 @@ function validateForm() {
     errorMessage += "- Please select at least two contact methods. \n";
   }
 
-  // Final Decision
+  // Final Decision to Alert or Submit
   if (errorMessage !== "") {
     alert("Please correct the following errors:\n\n" + errorMessage);
     return false; 
